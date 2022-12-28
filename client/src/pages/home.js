@@ -1,6 +1,5 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { fetchData, getOneCard, getAllCards } from '../API/api'
 import Card from '../components/card'
 
 //All thanks to https://card-fight-vanguard-api.ue.r.appspot.com/
