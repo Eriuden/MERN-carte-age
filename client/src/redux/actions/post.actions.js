@@ -18,7 +18,7 @@ export const GET_TRENDS = "GET_TRENDS"
 
 export const GET_POST_ERRORS = "GET_POST_ERRORS"
 
-export const getPostq = (num) => {
+export const getPosts = (num) => {
     return (dispatch) => {
         return axios 
         .get(`${process.env.REACT_APP_API_URL}api/post/`)

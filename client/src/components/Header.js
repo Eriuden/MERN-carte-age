@@ -33,6 +33,8 @@ export default function Header() {
                 <>
                     <Link to ={"/connexion"}>Connexion</Link>
                     <Link to ={"/inscription"}>Inscription</Link>
+                    
+                    <Link to={"/postsPage"}>Profils de decks</Link>
                 </>
             )}
         </nav>
@@ -56,6 +58,8 @@ export default function Header() {
                 <>
                     <Link to ={"/connexion"}>Connexion</Link>
                     <Link to ={"/inscription"}>Inscription</Link>
+                    
+                    <Link to={"/postsPage"}>Profils de decks</Link>
                 </>
             )}
         </nav>
