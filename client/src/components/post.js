@@ -15,7 +15,7 @@ import { UidContext } from './appcontext'
 import PostComment from './PostComment'
 
 
-export default function post({post}) {
+export default function Post({post}) {
   const [isLoading, setIsLoading] = useState(true);
   const [isUpdated, setIsUpdated] = useState(false);
   const [textUpdate, setTextUpdate] = userData(null);
