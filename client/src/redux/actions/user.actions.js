@@ -59,7 +59,10 @@ export const deleteUser = (userId, name, email, password) => {
             url: `${process.env.REACT_APP_API_URL}api/user/${userId}`,
             data: {name, email, password},
         })
-        .catch((err) => window.alert(err))
+            .then((res)=> {
+                    dispatch({ type:DELETE_USER, payload: {userId}})
+                })
+            .catch((err) => window.alert(err))
     }
 }
 
