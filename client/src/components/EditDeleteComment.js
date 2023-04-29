@@ -37,7 +37,7 @@ export default function EditDeleteComment({comment, postId}) {
   return (
     <div>
         
-        {isAuthor && edit && (
+        {isAuthor && edit === false && (
             <form action='' onSubmit={handleEdit}>
 
                 <label htmlFor='text' onClick={()=> setEdit(!edit)}>
