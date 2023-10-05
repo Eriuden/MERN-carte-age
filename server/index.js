@@ -7,6 +7,7 @@ const {checkUser, requireAuth  } = require("./middleware/auth.middleware")
 const cors = require("cors")
 const postRoutes = require("./routes/post.route")
 const userRoutes = require("./routes/user.route")
+const carteRoutes = require("./routes/carte.route")
 const app = express()
 
 app.use(cors({origin: process.env.CLIENT_URL}))
@@ -32,6 +33,7 @@ app.get("/jwtid", requireAuth , (req, res) => {
 })
 
 app.use("/api/user", userRoutes)
+app.use("/api/post", carteRoutes)
 app.use("/api/post", postRoutes)
 
 app.listen(process.env.PORT, () => {

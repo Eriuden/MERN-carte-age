@@ -17,6 +17,7 @@ export default function Home() {
   })
   return (
     <div>
+      <input type="search" onChange={(e) => setCardsDatas(e.target.value)}/>
       { cardsData
       .map((card) => (
         <Card card={card} key={card.id} />
