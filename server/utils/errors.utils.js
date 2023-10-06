@@ -27,7 +27,7 @@ module.exports.signInErrors = (err) => {
         errors.email = "Email inconnu"
     
     if(err.message.includes("password"))
-        errors.email = "Mot de passe inconnu"
+        errors.password = "Mot de passe inconnu"
 }
 
 module.exports.uploadErrors = (err) => {
